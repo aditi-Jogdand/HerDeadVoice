@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url(./56113-O8FXP0-18.jpg);
+    overflow-x:hidden;
+}
+
+a.poem{
+    text-decoration:none;
+    color:black;
+}
+
+a:hover{
+    color:#1294CC;
+}
+
+
+
+
+h2{
+    font-family:"Lobster";
+}
+
+.index1{
+    margin-top:15px;
+}
+
+
+
+/* footer */
+.footer{
+    height:50px;
+   
+}
+
+
+
+
+
+

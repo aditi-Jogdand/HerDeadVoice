@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./poem.css">
+    <link rel="stylesheet" href="./poem2.css">
+    
+    <link rel="stylesheet" href="/herdeadvoice/assets/css/style2.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Yellowtail&display=swap" rel="stylesheet">
+      <script>
+        let currentPage = 1;
+
+function toggleClass(e, toggleClassName) {
+  if(e.className.includes(toggleClassName)) {
+    e.className = e.className.replace(' ' + toggleClassName, '');
+  } else {
+    e.className += ' ' + toggleClassName;
+  }
+}
+
+function movePage(e, page) {
+  if (page == currentPage) {
+    currentPage+=2;
+    toggleClass(e, "left-side");
+    toggleClass(e.nextElementSibling, "left-side");
+    
+  }
+  else if (page = currentPage - 1) {
+    currentPage-=2;
+    toggleClass(e, "left-side");
+    toggleClass(e.previousElementSibling, "left-side");
+  }
+  
+}
+
+
+      </script>
+</head>
+<body>
+    <nav class="navigation max-width-1 m-auto">
+    </nav>
+
+    <div class="content max-width-1 m-auto">
+       
+    <div class="book">
+        <div class="page cover-front" onclick="movePage(this, 1)">
+            <div class="cover-image"></div>
+          
+        </div>
+        <div class="page cover-front" onclick="movePage(this, 2)"></div>
+        <div class="page text-page" onclick="movePage(this, 3)">
+            <h2>Journey Through The Stories...</h2>
+            <div class="index1">
+            <p class="title"><b>1.</b> <a class="poem" href="../poempage/poem_1.html">Her Untold Silent Screams</a></p>
+            <p class="title"><b>2.</b> <a class="poem" href="../poempage/poem_2.html">Her Trapped Soul</a></p>
+            <p class="title"><b>3.</b>  <a class="poem" href="../poempage/poem_3.html">Unforgotten Whirlwinds Of Heart</a></p>
+            <p class="title"><b>4.</b>  <a class="poem" href="../poempage/poem_4.html">Shattered Yet Unbroken</a></p>
+            <p class="title"><b>5.</b> <a class="poem" href="../poempage/poem_5.html"> Darkest Sunset</a></p>
+            <p class="title"><b>6.</b>  <a class="poem" href="../poempage/poem_6.html">Her Smothered Breaths</a></p>
+            <p class="title"><b>7.</b>  <a class="poem" href="../poempage/poem_7.html">The Unshaded Darkness</a></p>
+            <p class="title"><b>8.</b>  <a class="poem" href="../poempage/poem_8.html">Her Broken Rise</a></p>
+            <p class="title"><b>9.</b>  <a class="poem" href="../poempage/poem_9.html">Her Crushed Wings</a></p>
+            <p class="title"><b>10.</b>  <a class="poem" href="../poempage/poem_10.html">The Unspoken Section Of Diary</a></p>
+        </div>
+        </div>
+        <div class="page text-page" onclick="movePage(this, 4)">
+          <div class="index1">
+            <p class="title"><b>11.</b> <a class="poem" href="../poempage/poem_11.html">Healing: Strength To Be Stronger</a></p>
+            <p class="title"><b>12.</b> <a class="poem" href="../poempage/poem_12.html">The Murdered Industry</a></p>
+            <p class="title"><b>13.</b> <a class="poem" href="../poempage/poem_13.html">The Business Of Relations</a></p>
+            <p class="title"><b>14.</b> <a class="poem" href="../poempage/poem_14.html">Dowry The Game</a></p>
+            <p class="title"><b>15.</b> <a class="poem" href="../poempage/poem_15.html">The Fictitious Practice To Slave Innocent Souls</a></p>
+            <p class="title"><b>16.</b> <a class="poem" href="../poempage/poem_16.html">Her Debilitated Innocence</a></p>
+            <p class="title"><b>17.</b> <a class="poem" href="../poempage/poem_17.html">Unleash The Fight For Injustice</a></p>
+            <p class="title"><b>18.</b> <a class="poem" href="../poempage/poem_18.html">Reanalyze Masculinity</a></p>
+            <p class="title"><b>19.</b> <a class="poem" href="../poempage/poem_19.html">The Deals Of Soul</a></p>
+            <p class="title"><b>20.</b> <a class="poem" href="../poempage/poem_20.html">Be The Wise Change</a></p>
+        </div>
+        </div>
+        <div class="page text-page" onclick="movePage(this, 5)">
+          <div class="index1">
+            
+              <p class="title"><b>21.</b> <a class="poem" href="../poempage/poem_21.html">Muted Voice, Stolen Dreams</a></p>
+            <p class="title"><b>22.</b> <a class="poem" href="../poempage/poem_22.html">A Cry For Freedom</a></p>
+            <p class="title"><b>23.</b> <a class="poem" href="../poempage/poem_23.html">Disrupt This Cycle</a></p>
+            <p class="title"><b>24.</b> <a class="poem" href="../poempage/poem_24.html">Love Language Of Humanity</a></p>
+            <p class="title"><b>25.</b> <a class="poem" href="../poempage/poem_25.html">Love: The Power Of Healing</a></p>
+            <p class="title"><b>26.</b> <a class="poem" href="../poempage/poem_26.html">Not A Feminine Light</a></p>
+            <p class="title"><b>27.</b> <a class="poem" href="../poempage/poem_27.html">Comprehending Humanity</a></p>
+            <p class="title"><b>28.</b> <a class="poem" href="../poempage/poem_28.html">Kindness The Ray Within</a></p>
+            <p class="title"><b>29.</b> <a class="poem" href="../poempage/poem_29.html">The End Of Time</a></p>
+            <p class="title"><b>30.</b> <a class="poem" href="../poempage/poem_30.html">Her Walk On Empty</a></p>
+        </div>
+        </div>
+        <div class="page text-page" onclick="movePage(this, 6)">
+          <div class="index1">
+            
+            <p class="title"><b>31.</b> <a class="poem" href="../poempage/poem_31.html">Her Concealed Wounds</a></p>
+            <p class="title"><b>32.</b> <a class="poem" href="../poempage/poem_32.html">Innocent Heart's Broken Courage</a></p>
+            <p class="title"><b>33.</b> <a class="poem" href="../poempage/poem_33.html">Broken Soul's Screams Of Silence</a></p>
+            <p class="title"><b>34.</b> <a class="poem" href="../poempage/poem_34.html">Life Which Is Bought And Soul</a></p>
+            <p class="title"><b>35.</b> <a class="poem" href="../poempage/poem_35.html">Her Broken Wings And Healing Scars</a></p>
+            <p class="title"><b>36.</b> <a class="poem" href="../poempage/poem_36.html">She's Surviving the Unthinkable</a></p>
+            <p class="title"><b>37.</b> <a class="poem" href="../poempage/poem_37.html">Search Of Light In Dark</a></p>
+            <p class="title"><b>38.</b> <a class="poem" href="../poempage/poem_38.html">Tragedy Of Exploitation</a></p>
+            <p class="title"><b>39.</b> <a class="poem" href="../poempage/poem_39.html">A Call For The World Beyond The External</a></p>
+            <p class="title"><b>40.</b> <a class="poem" href="../poempage/poem_40.html">A Tale Of Hypocrisy And Redemption</a></p>
+        </div>
+        </div>
+        <div class="page text-page" onclick="movePage(this, 7)">
+          <div class="index1">
+            <p class="title"><b>41.</b> <a class="poem" href="../poempage/poem_41.html">Let's Restructure The Narrative</a></p>
+            <p class="title"><b>42.</b> <a class="poem" href="../poempage/poem_42.html">He Needs To Unlearn The Toxic Language</a></p>
+            <p class="title"><b>43.</b> <a class="poem" href="../poempage/poem_43.html">Broken Pieces Of Faith</a></p>
+            <p class="title"><b>44.</b> <a class="poem" href="../poempage/poem_44.html">Battling The Tide Of Fear</a></p>
+            <p class="title"><b>45.</b> <a class="poem" href="../poempage/poem_45.html">Caged By Despair</a></p>
+            <p class="title"><b>46.</b> <a class="poem" href="../poempage/poem_46.html">Scars Which Remains</a></p>
+            <p class="title"><b>47.</b> <a class="poem" href="../poempage/poem_47.html">A Box Of Buried Memories</a></p>
+            <p class="title"><b>48.</b> <a class="poem" href="../poempage/poem_48.html">The Nameless Truth</a></p>
+            <p class="title"><b>49.</b> <a class="poem" href="../poempage/poem_49.html">Silent Scars That Speak</a></p>
+            <p class="title"><b>50.</b> <a class="poem" href="../poempage/poem_50.html">Fear In The Face Of Freedom </a></p>
+        </div>
+        </div>
+       
+        <div class="page blank" onclick="movePage(this, 8)"></div>
+        <div class="page blank"></div>
+           
+        </div>
+        
+    </div>
+    </div>
+
+    <div class="footer max-width-2 m-auto">
+        
+    </div>
+
+    
+    
+</body>
+</html>

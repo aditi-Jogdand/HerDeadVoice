@@ -1,0 +1,84 @@
+/* .story-container{
+    display:flex;
+    flex-direction:column;
+} */
+/* 
+.svg{
+    margin-top:-100px;
+} */
+
+/* .story{
+    border-radius: 19px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.05) 100%);
+  box-shadow: 0px 4px 12px 0px rgba(18, 148, 204, 0.42);
+  backdrop-filter: blur(9.5px);
+  width: 900px;
+  height: 99px;
+  flex-shrink: 0;
+  
+  } */
+
+  @font-face {
+    font-family:"QuoteFont";
+    src: url('/herdeadvoice/fonts/waltographUI.ttf');
+  }
+
+  @font-face {
+    font-family: "Kattifont";
+    src: url('/herdeadvoice/fonts/kleymissky-0283.otf');
+  }
+
+  @font-face {
+    font-family: "Bhaiyakatti";
+    src: url(/herdeadvoice/fonts/Nautilus.otf);
+  }
+
+ @font-face{
+  font-family:"Meispagal";
+  src:url(/herdeadvoice/fonts/coors-script-regular.ttf)
+ }
+
+  .story-box{
+    margin-top:-620px;
+    margin-left:7vw;
+  }
+
+  .readall{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px;
+    padding-bottom:10px;
+  }
+
+  div.read{
+   margin-right:2px;
+    
+  }
+
+  .author-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #1294CC;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  width:73%;
+  font-family: 'QuoteFont';
+  /* max-width: 90%; */
+}
+
+
+  

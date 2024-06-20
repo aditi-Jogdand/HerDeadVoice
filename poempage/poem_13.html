@@ -1,57 +1,202 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poem</title>
-    <link rel="stylesheet" href="./page.css">
-    <link rel="stylesheet" href="../assets/css/style2.css">
-</head>
-<body>
-    <div class="background"></div>
-    <div class="woolf"></div>
-    <div class="content-container">
-        <div class="content">
-            <h1>The Business Of Relations</h1>
-<h2>Abhinav Patel</h2>
-<p>It starts with the birth of a girl,<br />
-Parents dread the thought of the dowry they'll swirl.</p>
-<p>A life of struggle, of saving every dime,<br />
-Just to marry off their daughter in time.</p>
-<p>But even then, it's not enough,<br />
-The demands keep rising, the pressure is rough.</p>
-<p>Gold, cash, cars, and property,<br />
-All for a marriage that's meant to be.</p>
-<p>And then the groom's family enters the scene,<br />
-With their list of demands, so obscene.</p>
-<p>The girl's family must comply,<br />
-Or risk bringing shame to their name.</p>
-<p>dowry, the curse on society,<br />
-A barbaric practice that must cease to be,<br />
-A system built on greed and pride,<br />
-Where girls are sold like goods to buy.</p>
-<p>The girl's dreams and aspirations are shattered,<br />
-Her life was no longer her own, but what the groom's family mattered.</p>
-<p>She's a prisoner, a slave to their whims,<br />
-Her worth is measured in material things.</p>
-<p>And if she fails to meet their demands,<br />
-She's abused, tortured, and everyday harmed.</p>
-<p>Her fate left to the mercy of fate,<br />
-Her life in tatters, her soul full of hate.</p>
-<p>We must break the shackles of this curse,<br />
-And ensure that every girl can live without fear.</p>
-<p>It's time for us to take a stand,<br />
-And put an end to this practice, oh so grand.</p>
-<p>Let's empower our girls to chase their dreams,<br />
-To be fearless and confident, to achieve the impossible it seems.</p>
-<p>Let's break down the walls of this system so wrong,<br />
-And give every girl a chance to be strong.</p>
-<p>For it's time to rewrite the story,<br />
-Of girls who are sold, and live so sorry.</p>
-<p>Let's pledge to make a difference,<br />
-And free every girl from this vicious sentence</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Business Of Relations | Abhinav Patel</title>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-image: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/aa462558-0106-4268-9864-d34a4f35531f);
+  background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+            overflow:hidden;
+}
+
+.container {
+  height: 80vh;
+  width: 65vw;
+  margin: auto;
+  margin-top: 75px;
+  
+}
+
+ .content {
+  height: 80vh;
+  background: rgba(16, 21, 61, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.6) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+  width: 20vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  padding-top: 15px;
+  margin:auto;
+}
+.content {
+  
+  width:500px;
+  max-width:fit-content;
+  padding:22px;
+  padding-top:22px;
+}
+
+
+
+/* Firefox scrollbar styling */
+.scrollbar-div {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(123, 138, 251) rgba(16, 21, 61, 0.5);
+}
+
+/* Webkit scrollbar styling */
+.scrollable-div::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable-div::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  background-color: rgba(16, 21, 61, 0.5);
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+  color: rgb(123, 138, 251);
+}
+
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 21, 61, 0.5);
+  color: rgb(123, 138, 251);
+}
+
+
+
+
+
+
+/* content */
+
+.title{
+    display:flex;
+    flex-direction:column;
+    color:white;
+}
+.title > h2{
+    
+    text-decoration:underline;
+    font-size:2rem;
+}
+
+h3{
+    text-decoration: underline;
+    margin-bottom:5px;
+}
+
+span{
+    
+    color:#E59BE9;
+    font-family:"Bhaiyakatti","hello","Montserrat", sans-serif;
+    font-weight:410;
+  
+  letter-spacing:1px;
+}
+
+@media screen  and (max-width:420px) {
+    .title > h2{
+       font-size:1.5rem;
+}
+
+h3{
+    
+    margin-bottom:7px;
+}
+
+.container {
+  
+  width: 80vw;
+ 
+  
+}
+
+.content{
+    height:70vh;
+}
+
+p{
+    font-size:0.8rem;
+}
+}
+</style>
+    <link rel="stylesheet" href="/herdeadvoice/assets/css/style2.css">
+  </head>
+  <body>
+    <div class="container">
+     
+      <div class="content scrollbar-div scrollable-div">
+        <section class="title">
+          <h2 class="heading">The Business Of Relations</h2>
+          <h3>by Abhinav Patel</h3>
+          <p>It starts with the birth of a girl,<br />
+            Parents dread the thought of the <span>dowry</span> they'll swirl.</p>
+            <p>A life of <span>struggle</span>, of saving every dime,<br />
+            Just to marry off their daughter in time.</p><br>
+            <p>But even then, it's not enough,<br />
+            The demands keep rising, the <span>pressure</span> is rough.</p><br>
+            <p><span>Gold</span>, <span>cash</span>, <span>cars</span>, and <span>property</span>,<br />
+            All for a marriage that's meant to be.</p><br>
+            <p>And then the groom's family enters the scene,<br />
+            With their list of demands, so <span>obscene</span>.</p><br>
+            <p>The girl's family must comply,<br />
+            Or risk bringing shame to their name.</p><br>
+            <p>dowry, the <span>curse on society</span>,<br />
+            A barbaric practice that must cease to be,<br />
+            A system built on <span>greed and pride</span>,<br />
+            Where girls are sold like goods to buy.</p><br>
+            <p>The girl's dreams and aspirations are <span>shattered</span>,<br />
+            Her life was no longer her own, but what the groom's family mattered.</p><br>
+            <p>She's a <span>prisoner</span>, a <span>slave</span> to their whims,<br />
+            Her worth is measured in material things.</p><br>
+            <p>And if she fails to meet their demands,<br />
+            She's <span>abused</span>, <span>tortured</span>, and everyday <span>harmed</span>.</p><br>
+            <p>Her fate left to the mercy of fate,<br />
+            Her life in tatters, her soul full of <span>hate</span>.</p><br>
+            <p>We must break the shackles of this curse,<br />
+            And ensure that every girl can live without <span>fear</span>.</p><br>
+            <p>It's time for us to take a stand,<br />
+            And put an <span>end to this practice</span>, oh so grand.</p><br>
+            <p>Let's empower our girls to chase their dreams,<br />
+            To be fearless and confident, to achieve the impossible it seems.</p><br>
+            <p>Let's break down the walls of this system so wrong,<br />
+            And give every girl a chance to be <span>strong</span>.</p><br>
+            <p>For it's time to rewrite the story,<br />
+            Of girls who are sold, and live so sorry.</p><br>
+            <p>Let's pledge to make a difference,<br />
+            And free every girl from this <span>vicious</span> sentence</p>
+  
+     
+        </section>
+        
+      </div>
     </div>
-</body>
+  </body>
 </html>

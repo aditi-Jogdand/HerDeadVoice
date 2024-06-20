@@ -1,32 +1,155 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poem</title>
-    <link rel="stylesheet" href="./page.css">
-    <link rel="stylesheet" href="../assets/css/style2.css">
+    <title>Unforgotten Whirlwinds of Heart | Abhinav Patel</title>
+   
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Unkempt:400,700');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #333;
+    font-family: 'Unkempt', cursive;
+    font-weight: 400;
+    color: floralwhite;
+    text-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    font-size: 90%;
+    overflow-x:hidden;
+}
+.outline {
+    text-shadow:
+        -1px -1px 0 rgba(90, 90, 90, 0.50),
+        1px -1px 0 rgba(90, 90, 90, 0.50),
+        -1px 1px 0 rgba(90, 90, 90, 0.50),
+        1px 1px 0 rgba(90, 90, 90, 0.50),
+        0 5px 25px rgba(0, 0, 0, 0.5);
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100vw;
+    
+    padding:20px 50px;
+}
+#title, #poem {
+    float: left;
+}
+#title {
+    width: 100%;
+    padding-bottom: 1em;
+}
+#poem {
+    width: 100%;
+    /* padding: 0 0 0 2em; */
+   
+}
+h1, h2, h3 {
+    line-height: 1;
+}
+h1 {
+    font-size: 4em;
+    padding-bottom: 0.25em;
+    border: dashed rgba(255, 255, 255, 0.50);
+    border-width: 0 0 1px 0;
+}
+h2 {
+    font-size: 1.8em;
+    padding-top: 0.5em;
+}
+h3 {
+    font-size: 3em;
+}
+p {
+    font-size: 2.1em;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.red {
+    color: red;
+}
+.pink {
+    color: deeppink;
+}
+.yellow {
+    color: gold;
+}
+.green {
+    color: greenyellow;
+}
+.blue {
+    color: deepskyblue;
+}
+.brown {
+    color: peachpuff;
+}
+.orchid {
+    color: orchid;
+}
+.aqua {
+    color: aquamarine;
+}
+.gray {
+    color: dimgray;
+}
+
+@media  screen and (max-width:600px) {
+      #poem{
+         font-size:1em;
+      }
+      #container {
+    
+    width: 100vw;
+    
+}
+}
+@media  screen and (max-width:400px) {
+      #poem{
+         font-size:0.8em;
+      }
+      #container {
+    padding: 20px 20px;
+    width: 100vw;
+    
+}
+h1 {
+    font-size: 2.5em;
+   
+}
+}
+
+    </style>
 </head>
 <body>
-    <div class="background"></div>
-    <div class="woolf"></div>
-    <div class="content-container">
-        <div class="content">
+    <div id="container">
+        <div id="title">
             <h1>Unforgotten Whirlwinds of Heart</h1>
-<h2>Abhinav Patel</h2>
-<p>Our society accused her of bringing shame<br />
-By snatching away her hopes and even name<br />
-They treated her like an animal, not a girl<br />
-Just to satisfy their barbaric thirst, biassed thinking which unfurls</p>
-<p>The stigma surrounding sexual violence, won't let our heroine wear her
-crown<br />
-She's not alone in this battle, many are enduring the same frown</p>
-<p>It demands a change from us all to stand and put a shield against such
-crime<br />
-And listen to stories of those who were affected with time<br />
-It's time for no more oppression worn as a crown<br />
-Time to lay down arm to prevent future destruction around</p>
+            <h2>by Abhinav patel</h2>
+        </div>
+        <div id="poem">
+            <p>Our<span class="yellow"> society</span> accused her of bringing <span class="pink">shame</span></p><br>
+            <p>By <span class="blue">snatching</span> away her <span class="gray">hopes</span> and even name</p><br>
+            <p>They treated her like an <span class="green">animal</span> , not a girl</p><br>
+            <p>Just to satisfy their <span class="red">barbaric thirst</span> biassed thinking which unfurls</p><br>
+            <p>The stigma surrounding <span class="blue">sexual violence</span> , won't let our <span class="gray">heroine</span> wear her
+                crown</p><br>
+            <p>It demands a change from us all to stand and put a shield against such <span class="pink">crime</span></p><br>
+            <p>And listen to stories of those who were affected with time</p><br>
+            <p>It's time for no more <span class="yellow">oppression</span> worn as a <span class="gray">crown</span></p><br>
+            <p>Time to lay down arm to prevent future <span class="blue">destruction</span> around</p><br>
+            
         </div>
     </div>
 </body>

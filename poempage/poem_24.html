@@ -1,51 +1,184 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poem</title>
-    <link rel="stylesheet" href="./page.css">
-    <link rel="stylesheet" href="../assets/css/style2.css">
-</head>
-<body>
-    <div class="background"></div>
-    <div class="woolf"></div>
-    <div class="content-container">
-        <div class="content">
-            <h1>Love Language Of humanity</h1>
-<h2>Abhinav Patel</h2>
-<p>In love's embrace, a higher force,<br />
-That binds two souls in its pure course,<br />
-With every breath, with every kiss,<br />
-A union formed, in timeless bliss.</p>
-<p>But when the force is one of power,<br />
-And love is stripped of its sweet flower,<br />
-What's left is but a hollow shell,<br />
-Of agony and endless hell.</p>
-<p>To force oneself on one's own spouse,<br />
-Is to rob them of their very house,<br />
-Of dignity and self respect,<br />
-And leave them feeling so abject.</p>
-<p>For love is not just physical,<br />
-It's spiritual and magical,<br />
-And when we seek to dominate,<br />
-We seal our own unhappy fate.</p>
-<p>Let's cherish those we love and hold,<br />
-With tenderness and hearts so bold,<br />
-For in that love, we find our peace,<br />
-And all our doubts and fears are released.</p>
-<p>For only then can we truly see,<br />
-The beauty of love's majesty<br />
-Love, a word so pure and divine<br />
-Yet humans distort it, commit a crime<br />
-Forcing themselves on their beloved spouse<br />
-To fulfill desires, they cannot arouse</p>
-<p>Lust and pleasure, they seek to gain<br />
-Ignoring their partner's hurt and pain<br />
-Forgetting the bond they once shared<br />
-Leaving their love and respect impaired</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Language Of Humanity | Abhinav Patel</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@300;400;500;700&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family: "Nunito", sans-serif;
+        background-image: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/aa462558-0106-4268-9864-d34a4f35531f);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .container {
+        height: 80vh;
+        width: 65vw;
+        margin: auto;
+        margin-top: 75px;
+      }
+
+      .content {
+        height: 80vh;
+        background: rgba(16, 21, 61, 0.5);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+          0 1px 0 0 rgba(255, 255, 255, 0.6) inset,
+          0 4px 16px rgba(0, 0, 0, 0.12);
+        z-index: 10;
+        width: 20vw;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 20px;
+        padding-top: 15px;
+        margin: auto;
+      }
+      .content {
+        width: fit-content;
+
+        padding: 22px;
+        padding-top: 22px;
+      }
+
+      /* Firefox scrollbar styling */
+      .scrollbar-div {
+        scrollbar-width: thin;
+        scrollbar-color: rgb(123, 138, 251) rgba(16, 21, 61, 0.5);
+      }
+
+      /* Webkit scrollbar styling */
+      .scrollable-div::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      .scrollable-div::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 15px;
+      }
+
+      .scrollable-div::-webkit-scrollbar-thumb {
+        background-color: rgba(16, 21, 61, 0.5);
+        border-radius: 10px;
+        border: 3px solid #f1f1f1;
+        color: rgb(123, 138, 251);
+      }
+
+      .scrollable-div::-webkit-scrollbar-thumb:hover {
+        background: rgba(16, 21, 61, 0.5);
+        color: rgb(123, 138, 251);
+      }
+
+      /* content */
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        color: white;
+      }
+      .title > h2 {
+        text-decoration: underline;
+        font-size: 2rem;
+      }
+
+      h3 {
+        text-decoration: underline;
+        margin-bottom: 5px;
+      }
+
+      span {
+        color: #e59be9;
+        font-family: "Bhaiyakatti", "hello", "Montserrat", sans-serif;
+        font-weight: 410;
+
+        letter-spacing: 1px;
+      }
+
+      @media screen and (max-width: 420px) {
+        .title > h2 {
+          font-size: 1.5rem;
+        }
+
+        h3 {
+          margin-bottom: 7px;
+        }
+
+        .container {
+          width: 80vw;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="/herdeadvoice/assets/css/style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content scrollbar-div scrollable-div">
+        <section class="title">
+          <h2 class="heading">Love Language Of Humanity</h2>
+          <h3>by Abhinav Patel</h3>
+          <p>
+            In love's embrace, a <span>higher</span> force,<br />
+            That binds two souls in its <span>pure</span> course,<br />
+            With every breath, with every kiss,<br />
+            A union formed, in <span>timeless</span> bliss.
+          </p><br>
+          <p>
+            But when the force is one of <span>power</span>,<br />
+            And love is stripped of its <span>sweet</span> flower,<br />
+            What's left is but a <span>hollow</span> shell,<br />
+            Of <span>agony</span> and endless <span>hell</span>.
+          </p><br>
+          <p>
+            To force oneself on one's own <span>spouse</span>,<br />
+            Is to rob them of their very <span>house</span>,<br />
+            Of <span>dignity</span> and <span>self-respect</span>,<br />
+            And leave them feeling so <span>abject</span>.
+          </p><br>
+          <p>
+            For love is not just <span>physical</span>,<br />
+            It's <span>spiritual</span> and <span>magical</span>,<br />
+            And when we seek to <span>dominate</span>,<br />
+            We seal our own unhappy <span>fate</span>.
+          </p><br>
+          <p>
+            Let's <span>cherish</span> those we love and <span>hold</span>,<br />
+            With <span>tenderness</span> and hearts so <span>bold</span>,<br />
+            For in that love, we find our <span>peace</span>,<br />
+            And all our doubts and fears are <span>released</span>.
+          </p><br>
+          <p>
+            For only then can we truly <span>see</span>,<br />
+            The <span>beauty</span> of love's <span>majesty</span><br />
+            Love, a word so <span>pure</span> and <span>divine</span><br />
+            Yet humans distort it, commit a <span>crime</span><br />
+            Forcing themselves on their beloved <span>spouse</span><br />
+            To fulfill desires, they cannot <span>arouse</span>
+          </p><br>
+          <p>
+            <span>Lust</span> and pleasure, they seek to <span>gain</span><br />
+            Ignoring their partner's <span>hurt</span> and <span>pain</span><br />
+            Forgetting the <span>bond</span> they once shared<br />
+            Leaving their love and respect <span>impaired</span>
+          </p>
+        </section>
+      </div>
     </div>
-</body>
+  </body>
 </html>
